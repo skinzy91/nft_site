@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT SITE</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <body class="scrollbar"><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="header">
+            <div class="headerContainer maxWidthContainer">
+                <div class="headerContainer">
+                    <div class="logo disableSelect"><img src="img/logo.png" alt="logo"
+                            style="height: 32px; width: auto; margin-top: -4px;"></div>
+                    <div class="menuItems hideOnSmallScreen">
+                        <div class="menuItemK">About</div>
+                        <div class="menuItemK">Game</div>
+                        <div class="menuItemK">FAQ</div>
+                        <div class="menuItemK">Team</div><a href="#" rel="noreferrer" target="_blank">
+                            <div class="menuItemK coloredText" style="padding: 0px 40px; font-weight: 600;">Join Discord
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="headerIcons"><a href="#" rel="noreferrer" target="_blank">
+                        <div class="hIcon"><svg viewBox="0 0 640 512">
+                                <path fill="currentColor"
+                                    d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                                </path>
+                            </svg></div>
+                    </a><a href="#" rel="noreferrer" target="_blank">
+                        <div class="hIcon"><svg viewBox="0 0 448 512">
+                                <path fill="currentColor"
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                    class=""></path>
+                            </svg></div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="desktopRelative">
+            <div class="centerImage removeOnSmallScreen"><img src="#" alt="#" id="#"></div>
+            <div class="centerImage removeOnBigScreen" style="max-width: calc(100vw - 10px);"><img src="#" alt="#"
+                    id="#"></div>
+            <div class="maxWidthContainer HeaderWImage" style="margin-top: -60px;">
+                <div class="column11" id="scrollTop" style="height: 100%;">
+                    <div class="Vcenter" style="flex-direction: column; padding: 25px; position: relative;">
+                        <h1 style="font-size: 72px;">JOIN <br><span class="coloredText highlightedText">
+                            </span><br> TODAY</h1>
+                        <h4 class="mobileCenterText"
+                            style="margin-top: 70px; max-width: 450px; text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 2px;">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium tempore fugiat, qui
+                            dolores ipsam corporis non quis consequuntur deserunt hic nesciunt maxime doloremque
+                            cupiditate pariatur possimus voluptatem? Sapiente, reiciendis hic!</h4>
+                        <div class="flexColumns"><a href="#" target="_blank"
+                                style="margin-top: 50px; display: flex; align-items: center; justify-content: center;">
+                                <div class="btn roundBtn discordButton disableSelect hideOnSmallScreens"
+                                    style="margin: unset;"><svg viewBox="0 0 640 512">
+                                        <path fill="currentColor"
+                                            d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                                        </path>
+                                    </svg>Join Discord</div>
+                            </a>
+                            <div class="container glassContainer center LaunchingBox"
+                                style="width: 210px; height: 90px; border-radius: 500px;">
+                                <h3>Launching in</h3>
+                                <h2 style="font-size: 24px;">2022</h2>
+                            </div>
+                        </div>
+                        <div class="center" id="launchingBox"></div>
+                    </div>
+                    <div class="center">
+                        <div style="height: 200px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maxWidthContainer">
+            <div class="column12" id="scrollAbout" style="padding: 100px 0px 0px;">
+                <div class="flexContainer order2">
+                    <h3 class="coloredText">About THE NFT</h3>
+                    <h1 style="margin-top: 10px; margin-bottom: 20px; line-height: 50px;">PLAY TO EARN</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores mollitia asperiores, animi
+                        recusandae aliquid exercitationem cum? Autem, ut quibusdam voluptatum accusamus fuga ea iste, ex
+                        amet earum aut magni quidem.</p><a href="#" rel="noreferrer" target="_blank">
+                        <div class="btn roundBtn" style="width: 150px; margin-top: 40px;">Join Now</div>
+                    </a>
+                </div>
+                <div class="center order1 nftImage" style="padding: 30px 5px; transform: scale(0.5); opacity: 0;"><img
+                        class="NFTImageImg" src="#" style="width: 100%; border-radius: 25px;"></div>
+            </div>
+        </div>
+        <div class="center maxWidthContainer gameModeContainerFull" id="scrollGameMode" style="flex-direction: column;">
+            <h3 class="coloredText">Play with yourself</h3>
+            <h1 style="margin-bottom: 30px;">GAME</h1>
+            <div class="column111">
+                <div class="gameModeContainer" style="transform: scale(0.5); opacity: 0;"><img src="#"></div>
+                <div class="gameModeContainer" style="transform: scale(0.5); opacity: 0;"><img src="#"></div>
+                <div class="gameModeContainer" style="transform: scale(0.5); opacity: 0;"><img src="#"></div>
+            </div>
+        </div>
+        <div class="center maxWidthContainer horizontalBannerContainer" id="scrollHorizontalBanner"
+            style="flex-direction: column; padding: 100px 50px;">
+            <h3 class="coloredText" style="margin-top: 25px;">#</h3>
+            <h1 style="margin-bottom: 35px;">#</h1>
+            <div class="horizontalBannerImageContainer"><img src="#" alt="#"></div>
+        </div>
+        <div class="maxWidthContainer"
+            style="padding-top: 0px; padding-bottom: 75px; display: flex; flex-direction: column; align-items: center;">
+            <h2 class="removeOnBigScreen" style="margin-bottom: 40px; text-align: center;">#</h2>
+            <div class="container">
+                <div class="column111" style="width: 100%;">
+                    <div class="flex flexColumnsUSPs" style="justify-content: center; align-items: center;"><img
+                            alt="BBUSP" src="" style="width: 70px; margin-right: 15px;">
+                        <h2 style="font-size: 20px; line-height: 25px;">#</h2>
+                    </div>
+                    <div class="flex flexColumnsUSPs" style="justify-content: center;"><img alt="BBUSP" src="#"
+                            style="width: 70px; margin-right: 15px;">
+                        <h2 style="font-size: 20px; line-height: 25px;">#</h2>
+                    </div>
+                    <div class="flex flexColumnsUSPs" style="justify-content: center;"><img alt="BBUSP" src="#"
+                            style="width: 70px; margin-right: 15px;">
+                        <h2 style="font-size: 20px; line-height: 25px;">#</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maxWidthContainer" id="scrollRoadmap"
+            style="padding: 75px 25px; margin-bottom: 150px; position: relative;">
+            <h3 class="coloredText">Ding ding ding!</h3>
+            <h1 style="margin-bottom: 40px;">ROAD MAP</h1>
+            <div class="NrmsTimelineContainer">
+                <div class="NrmsTimeline"></div>
+            </div>
+            <div style="margin-top: 80px;">
+                <div class="NTimelineContainer1" style="transform: scale(1); opacity: 1;">
+                    <div class="container timelineContainer containerHighlight">
+                        <div class="timelineIndicator">
+                            <div class="timelineIndicatorCircle"></div>
+                        </div>
+                        <div class="timelineFlex">
+                            <div class="timelineTitleContainer">
+                                <h2 class="timelineTitle">TEXT GOES HERE</h2>
+                                <p class="timelineParagraph">SOME MORE TEXT GOES HERE. <br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="NTimelineContainer2" style="transform: scale(1); opacity: 1;">
+                    <div class="container timelineContainer containerHighlight">
+                        <div class="timelineIndicator">
+                            <div class="timelineIndicatorCircle"></div>
+                        </div>
+                        <div class="timelineFlex">
+                            <div class="timelineTitleContainer">
+                                <h2 class="timelineTitle">TIME LINE</h2>
+                                <p class="timelineParagraph">EVEN MORE TEXT GOES HERE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="NTimelineContainer1" style="transform: scale(1); opacity: 1;">
+                    <div class="container timelineContainer containerHighlight">
+                        <div class="timelineIndicator">
+                            <div class="timelineIndicatorCircle"></div>
+                        </div>
+                        <div class="timelineFlex">
+                            <div class="timelineTitleContainer">
+                                <h2 class="timelineTitle">TEXT LINE</h2>
+                                <p class="timelineParagraph">AGAIN, MORE TEXT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="NTimelineContainer2" style="transform: scale(1); opacity: 1;">
+                    <div class="container timelineContainer containerHighlight">
+                        <div class="timelineIndicator">
+                            <div class="timelineIndicatorCircle"></div>
+                        </div>
+                        <div class="timelineFlex">
+                            <div class="timelineTitleContainer">
+                                <h2 class="timelineTitle">TEXT LINE ALMOST THERE</h2>
+                                <p class="timelineParagraph">ONE MORE TO GO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="NTimelineContainer1" style="transform: scale(1); opacity: 1;">
+                    <div class="container timelineContainer containerHighlight">
+                        <div class="timelineIndicator">
+                            <div class="timelineIndicatorCircle"></div>
+                        </div>
+                        <div class="timelineFlex">
+                            <div class="timelineTitleContainer">
+                                <h2 class="timelineTitle">LAST TEXT"</h2>
+                                <p class="timelineParagraph">DONE WITH THE TEXTS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maxWidthContainer">
+            <h1 class="center"
+                style="margin-top: 10px; margin-bottom: 40px; line-height: 50px; text-align: center; font-size: 48px;">
+                <div style="display: inline;">BECOME THE<span class="coloredText highlightedText metaverseHighlight"
+                        style="margin: 0px 10px;">EFFIN</span>CHAMPION!</div>
+            </h1>
+            <div style="display: flex; justify-content: center;"><img src="#" alt="TournamentImage"
+                    style="max-width: 750px; width: 100%;"></div>
+        </div>
+        <div class="maxWidthContainer " style="padding: 75px 50px;">
+            <h2 class="center">PIC</h2>
+            <p style="margin-bottom: 50px; margin-top: 10px; text-align: center;">SUPPORT FROM </p>
+            <div class="column111 mobilePartners"><a href="#" target="_blank" rel="noreferrer">
+                    <div class="container center"
+                        style="padding: 30px 0px; background-color: rgb(234, 214, 27); cursor: pointer; transform: scale(0.5); opacity: 0;">
+                        <img src="#" style="height: 100px; width: auto;">
+                    </div>
+                </a><a href="#" target="_blank" rel="noreferrer">
+                    <div class="container center containerHighlight"
+                        style="padding: 60px 0px; background: linear-gradient(146.1deg, rgb(238, 238, 238) 2.22%, rgb(153, 153, 153) 89.02%); cursor: pointer; transform: scale(0.5); opacity: 0;">
+                        <img src="#" style="height: auto; width: 80%;">
+                    </div>
+                </a><a href="#" target="_blank" rel="noreferrer">
+                    <div class="container center overflowImage"
+                        style="background-color: rgb(155, 133, 89); cursor: pointer; padding: 30px 0px; transform: scale(0.5); opacity: 0;">
+                        <img src="#" style="height: 120px; width: auto;">
+                    </div>
+                </a></div>
+            <div class="column1111 mobilePartners" style="margin-top: 10px;"><a href="#" target="_blank"
+                    rel="noreferrer">
+                    <div class="container center overflowImage"
+                        style="background: linear-gradient(133deg, rgb(3, 20, 58) 0%, rgb(9, 60, 111) 100%); cursor: pointer; padding: 30px 0px; transform: scale(0.5); opacity: 0;">
+                        <img src="#" style="height: 120px; width: auto;">
+                    </div>
+                </a><a href="#" target="_blank" rel="noreferrer">
+                    <div class="container center overflowImage"
+                        style="background-color: rgb(184, 28, 29); cursor: pointer; padding: 30px 0px; transform: scale(0.5); opacity: 0;">
+                        <img src="#" style="height: auto; width: 80%;">
+                    </div>
+                </a><a href="#" target="_blank" rel="noreferrer">
+                    <div class="container center overflowImage"
+                        style="background-color: rgb(46, 131, 179); cursor: pointer; padding: 30px 0px; transform: scale(0.5); opacity: 0;">
+                        <img src="#" style="height: auto; width: 80%;">
+                    </div>
+                </a><a href="#" target="_blank" rel="noreferrer">
+                    <div class="container center overflowImage"
+                        style="background-color: rgb(45, 39, 101); cursor: pointer; padding: 30px 0px; transform: scale(0.5); opacity: 0;">
+                        <img src="#" style="height: auto; width: 80%;">
+                    </div>
+                </a></div>
+        </div>
+        <div class="maxWidthContainer teamContainerContainer" id="scrollTeam">
+            <h3 class="coloredText">TEXT</h3>
+            <h1 style="margin-bottom: 20px;">TEXT</h1>
+            <div class="column1111">
+                <div class="teamContainer"><img alt="team member" src="#">
+                    <h2>TEXT</h2>
+                </div>
+                <div class="teamContainer"><img alt="team member" src="#">
+                    <h2>TEXT</h2>
+                </div>
+                <div class="teamContainer"><img alt="team member" src="#">
+                    <h2>TEXT</h2>
+                </div>
+                <div class="teamContainer"><img alt="team member" src="#">
+                    <h2>TEXT</h2>
+                </div>
+            </div>
+            <div class="column1111">
+                <div class="teamContainer"><img alt="team member" src="#">
+                    <h2>TEXT</h2>
+                </div>
+                <div class="teamContainer"><img alt="team member" src="#">
+                    <h2>Developer</h2>
+                </div>
+            </div>
+        </div>
+        <div class="maxWidthContainer" id="scrollFAQ" style="padding: 50px 25px 0px;">
+            <h3 class="coloredText">Still have questions?</h3>
+            <h1 style="margin-bottom: 40px;">FAQ</h1>
+            <div class="container containerHighlight FAQContainer" id="FAQContainer0" style="cursor: pointer;">
+                <div class="flex FAQContent" style="justify-content: space-between; padding-bottom: 20px;">
+                    <h2 class="FAQTitle"></h2>
+                    <div id="FAQArrow0" class="FAQArrow"><svg viewBox="0 0 448 512" style="width: 25px;">
+                            <path fill="white"
+                                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                class=""></path>
+                        </svg></div>
+                </div>
+                <p><br></p>
+            </div>
+            <div class="container containerHighlight FAQContainer" id="FAQContainer1" style="cursor: pointer;">
+                <div class="flex FAQContent" style="justify-content: space-between; padding-bottom: 20px;">
+                    <h2 class="FAQTitle">#</h2>
+                    <div id="FAQArrow1" class="FAQArrow"><svg viewBox="0 0 448 512" style="width: 25px;">
+                            <path fill="white"
+                                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                class=""></path>
+                        </svg></div>
+                </div>
+                <p> <br>-<br></p>
+            </div>
+            <div class="container containerHighlight FAQContainer" id="FAQContainer2" style="cursor: pointer;">
+                <div class="flex FAQContent" style="justify-content: space-between; padding-bottom: 20px;">
+                    <h2 class="FAQTitle">#</h2>
+                    <div id="FAQArrow2" class="FAQArrow"><svg viewBox="0 0 448 512" style="width: 25px;">
+                            <path fill="white"
+                                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                class=""></path>
+                        </svg></div>
+                </div>
+                <p> <br></p>
+            </div>
+            <div class="container containerHighlight FAQContainer" id="FAQContainer3" style="cursor: pointer;">
+                <div class="flex FAQContent" style="justify-content: space-between; padding-bottom: 20px;">
+                    <h2 class="FAQTitle">#</h2>
+                    <div id="FAQArrow3" class="FAQArrow"><svg viewBox="0 0 448 512" style="width: 25px;">
+                            <path fill="white"
+                                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                class=""></path>
+                        </svg></div>
+                </div>
+                <p>. <br></p>
+            </div>
+            <div class="container containerHighlight FAQContainer" id="FAQContainer4" style="cursor: pointer;">
+                <div class="flex FAQContent" style="justify-content: space-between; padding-bottom: 20px;">
+                    <h2 class="FAQTitle">#</h2>
+                    <div id="FAQArrow4" class="FAQArrow"><svg viewBox="0 0 448 512" style="width: 25px;">
+                            <path fill="white"
+                                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                class=""></path>
+                        </svg></div>
+                </div>
+                <p>Y <br>
+                </p>
+            </div>
+            <div class="container containerHighlight FAQContainer" id="FAQContainer5" style="cursor: pointer;">
+                <div class="flex FAQContent" style="justify-content: space-between; padding-bottom: 20px;">
+                    <h2 class="FAQTitle">#</h2>
+                    <div id="FAQArrow5" class="FAQArrow"><svg viewBox="0 0 448 512" style="width: 25px;">
+                            <path fill="white"
+                                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                class=""></path>
+                        </svg></div>
+                </div>
+                <p> <br></p>
+            </div>
+        </div>
+        <div class="maxWidthContainer"
+            style="display: flex; flex-direction: column; align-items: center; padding: 150px 0px;">
+            <h2 class="centerH2" style="margin-bottom: 60px;"></h2>
+            <div class="flex CTAFlex"><a class="order2" href="#" target="_blank">
+                    <div class="btn roundBtn" id="centerA"
+                        style="font-size: 20px; margin-right: 30px; margin-top: 5px;">Join Discord</div>
+                </a></div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
